@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>org.example.drawplugin</id>
+    <name>My Sketcher</name>
+    <vendor>MonPseudo</vendor> <description><![CDATA[
+        Un outil simple pour dessiner par-dessus l'éditeur.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+
+    <actions>
+        <action id="DrawAction"
+                class="DrawAction"
+                text="Draw"
+                description="Ouvrir l'ardoise">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
